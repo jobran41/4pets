@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pets4Homes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-xl">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" width="60" height="60" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Adoption</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Stud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pets wanted</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Advice</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Dog Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Cat Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Insurance</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <div class="button rounded mr-2">
+          <button class="btn font-weight-bold text-white" type="button">
+            <i class="fa fa-wechat p-2 text-white"></i>
+            My messages
+          </button>
+        </div>
+        <div class="dropdown button rounded">
+          <button
+            class="btn font-weight-bold text-white dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fa fa-user p-2 text-white"></i>
+            My account
+          </button>
+
+          <div
+            class="dropdown-menu bg-warning text-white dropdown-menu-right"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-user text-white p-2"></i> Account Homepage</a
+            >
+
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-plus text-white p-2"></i> Post an Advert</a
+            >
+
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-folder-open text-white p-2"></i>Manage adverts</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-heart text-white p-2"></i>My Favourites</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-users text-white p-2"></i>Following Activity</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-lock text-white p-2"></i>Edit login</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-user-plus text-white p-2"></i>Edit Personal
+              Details</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-file-text-o text-white p-2"></i>Edit Pets4Homes
+              Profile</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-arrow-up text-white p-2"></i>Upgrade to
+              Breeder</a
+            >
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-envelope text-white p-2"></i>Contact Support</a
+            >
+            <hr class="w-100 px-0 border border-white" />
+            <a class="dropdown-item font-weight-bold text-white" href="#"
+              ><i class="fa fa-power-off text-white p-2"></i>Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container bg-white my-5 pb-3">
+      <div class="row pt-3">
+        <div class="col">
+          <h2 class="text-warning font-weight-bold">
+            My Account Homepage
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr class="w-100 px-0 border" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          Welcome <b>Client</b> to your account dashboard at Pets4Homes. From
+          this account page, you can create new pet adverts and manage your
+          existing pet adverts. If you have any problems please contact our
+          support desk using the Contact Support option.
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col alert alert-success border-success">
+          <p>
+            <b>Important announcement regarding Corona</b> - We are receiving a
+            significant number of questions with regards to the new rules on
+            staying at home and away from others. Please read our guidelines
+            with regards to the Corona virus.
+          </p>
+          <div class="d-flex">
+            <button type="button" class="btn btn-success mr-2">
+              More information
+            </button>
+            <button type="button" class="btn btn-success">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col alert alert-warning border-warning">
+          <p>
+            <b>Licensing Notice</b> - From 1st October 2018, the Animal Welfare
+            (Licensing of Activities Involving Animals) requirements in England
+            changed. If you are a dog breeder or sell animals as pets and aren't
+            currently licensed, you MUST contact your local licensing team to
+            discuss. If you have an animal activities license, please update
+            your account details to include the license details and email us a
+            copy of your license.
+          </p>
+          <div class="d-flex">
+            <button type="button" class="btn btn-warning text-white mr-2">
+              More information
+            </button>
+            <button type="button" class="btn btn-warning text-white mr-2">
+              Edit licence Details
+            </button>
+            <button type="button" class="btn btn-warning text-white">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col alert alert-warning border-warning">
+          <p>
+            <b>Personalise Your Profile</b> - We now display your profile name
+            and photo next to all pet listings. Please make sure your Pets4Homes
+            profile is updated, including photo/avatar, and a little information
+            about yourself. Users with completed profiles and photos are more
+            likely to get a higher response to their adverts.
+          </p>
+          <div class="d-flex">
+            <button type="button" class="btn btn-warning text-white mr-2">
+              Update Your Profile
+            </button>
+
+            <button type="button" class="btn btn-warning text-white">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col alert alert-info border-info">
+          <p>
+            <b>Posting Advice</b> - Please Note that 30% of adverts posted do
+            not make it past our approval process the first time. Please read
+            our posting advice BEFORE placing an advert to make sure you advert
+            goes live as quickly as possible.
+          </p>
+          <div class="d-flex">
+            <button type="button" class="btn btn-info text-white mr-2">
+              More information
+            </button>
+
+            <button type="button" class="btn btn-info text-white">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col alert alert-danger border-danger">
+          <p>
+            <b>Email & Whatsapp Phishing Warning</b> - Please be aware of fake
+            emails or whatsapp messages pretending to be from Pets4Homes support
+            or fraud team asking for your login details (Email and Password), if
+            you receive any, please report them to us as soon as possible. We
+            will NEVER email you asking for your password. Please keep your
+            password secure and NEVER give it out to anyone.
+          </p>
+          <div>
+            <button type="button" class="btn btn-danger text-white">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Post New Advert</h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-plus fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  You can create multiple free adverts on the Pets'Homes website
+                  with unlimited photos.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Manage Adverts</h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-folder-open fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  You currently have no adverts. Please create a new advert
+                  using the option above.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Edit Pest4Homes Profile
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <img src="logo.jpg" alt="logo" />
+                <p class="ml-4">
+                  Update your Public Pets4Homes Profile Page Information,
+                  including Profile Page name / url, Profile Photo, About us and
+                  website adress.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Following User Activity
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-users fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  View listings by people you follown view and manage followersn
+                  search for people.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                My Favourites
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-heart fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  View or manage your favourite Pets4Homes adverts.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Edit Personal Details
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-user-plus fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  Edit your personal details, including name, address,
+                  telephone, license details and preferences.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Edit Login Details
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-lock fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  Change your login details, including email and password.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Upgrade to "Breeder / Frequent" Account
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-arrow-up fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  Upgrade your account to a "Breeder / Frequent" account for
+                  free, if you need to place 3 or more adverts in a 12 month
+                  period.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-6">
+          <div class="card h-100 border rounded shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Contact Support
+              </h5>
+              <div class="card-body d-flex align-items-center">
+                <i class="fa fa-envelope fa-4x text-warning p-2"></i>
+                <p class="ml-4">
+                  Contact Pets4Homes support via email.
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row bg-warning mt-3">
+        <ul class="col-7 navbar-nav navbar-expand mx-auto">
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">About</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Contact</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Advertising</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Write For Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Link to Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Banners</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark pt-3">
+      <div class="row">
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Social Media</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Like us on Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Google Plus</a>
+            </li>
+          </ul>
+          <img src="logo.jpg" alt="site logo" />
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Dogs & Puppies for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">French Bulldogs for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Chihuahuas for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pugs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cocker Spaniels for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Labradors for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Bulldogs for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Cats & Kittens for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Bengals for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">British Shorthairs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Oriental Cates for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Persian Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Ragdoll Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Siamese Cats for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Other Pets for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Birds for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Fish for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Horses for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Poultry for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rabbits for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rodents for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Other Pages</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Cat Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pet Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cat Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Sell Pets for Free</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid adjust-text bg-dark py-4">
+      <div class="row justify-content-center">
+        <div class="col-9 text-white">
+          © Copyright - Zone4Code 2020 <br />
+          Pets4Homes.co.uk use cookies on this site to enhance your user
+          experience. Use of this website and other services constitutes
+          acceptance of the Pets4Homes
+          <a href="#">Terms of Use</a> and
+          <a href="#">Privacy and Cookie Policy </a>. You can
+          <a href="#">manage your cookies</a> at any time.
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

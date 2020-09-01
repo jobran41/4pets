@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pets4Homes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-xl">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" width="60" height="60" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Adoption</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Stud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pets wanted</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Advice</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Dog Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Cat Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Insurance</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between">
+        <input
+          class="button border-0 text-white mx-2 font-weight-bold rounded"
+          type="submit"
+          value="Register"
+        />
+        <input
+          class="button border-0 text-white mx-2 font-weight-bold rounded"
+          type="submit"
+          value="Login"
+        />
+      </div>
+    </nav>
+    <section class="container-fluid home-hero">
+      <form class="form1 px-4 py-2" action="action_page.php">
+        <h3 class="font-weight-bold text-center">Find your perfect pet</h3>
+        <div class="row">
+          <div class="col">
+            <div class="form-group mb-0">
+              <label for="pet-type" class="control-label font-weight-bold pb-0"
+                >Pet type</label
+              >
+
+              <select name="pet type" id="pet-type" class="form-control">
+                <option value="">Pet type</option>
+                <option value="birds">Birds</option>
+                <option value="cats">Cats</option>
+                <option value="dogs">Dogs</option>
+                <option value="horses">Horses</option>
+                <option value="invertebrates">Invertebrates</option>
+                <option value="poultry">Poultry</option>
+                <option value="rabbits">Rabbits</option>
+                <option value="reptiles">Reptiles</option>
+                <option value="rodents">Rodents</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pet-breed" class="control-label font-weight-bold pb-0"
+                >Pet Breed</label
+              >
+              <select name="pet breed" id="pet-breed" class="form-control">
+                <option value="">Pet Breed</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group mb-0">
+              <label for="location" class="control-label font-weight-bold pb-0"
+                >Location</label
+              >
+              <select name="location" id="location" class="form-control">
+                <option value="">Tunis</option>
+                <option value="">Ariana</option>
+                <option value="">Ben Arous</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label
+                for="search"
+                class="control-label font-weight-bold pb-0 invisible"
+                >Search</label
+              >
+              <button
+                type="submit"
+                name="search"
+                class="btn btn-block btn-warning font-weight-bold text-white"
+                id="search"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="section-padding section-bg text-center">
+      <div class="container mt-4">
+        <div class="row d-flex justify-content-between">
+          <h3 class="text-warning font-weight-bold">Latest Adverts</h3>
+          <a class="text-warning font-weight-bold" href="#">View all</a>
+        </div>
+        <div class="card-columns d-flex">
+          <div class="card h-100 mx-3 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              A sweet friendly dog, available now!
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_3.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              A sweet friendly dog, available now!
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_5.jpeg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              A sweet friendly dog, available now!
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              A sweet friendly dog, available now!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <h3 class="text-warning font-weight-bold">Latest Articles</h3>
+          <a class="text-warning font-weight-bold" href="#">View all</a>
+        </div>
+        <div class="card-columns d-flex">
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_2.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              Read full article
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_2.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              Read full article
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_5.jpeg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              Read full article
+            </div>
+          </div>
+
+          <div class="card h-100 mx-3">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img
+                src="dog_.jpg"
+                class="card-img-top embed-responsive-item"
+                alt="pet"
+              />
+            </div>
+            <div class="card-body">
+              Read full article
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container mt-4">
+      <div class="card-columns my-3">
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="dog_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Dogs for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Pugs</a>
+                </li>
+                <li>
+                  <a href="#">Bulldogs</a>
+                </li>
+                <li>
+                  <a href="#">Chihuahuas</a>
+                </li>
+                <li>
+                  <a href="#">Cockapoos</a>
+                </li>
+                <li>
+                  <a href="#">Shih Tzus</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">French Bulldogs</a>
+                </li>
+                <li>
+                  <a href="#">German Shepherds</a>
+                </li>
+                <li>
+                  <a href="#">Cocker Spaniels</a>
+                </li>
+                <li>
+                  <a href="#">Labradors</a>
+                </li>
+                <li>
+                  <a href="#">Mixed Breeds</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="cat_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Cats for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Bengals</a>
+                </li>
+                <li>
+                  <a href="#">Birmans</a>
+                </li>
+                <li>
+                  <a href="#">British Shorthairs</a>
+                </li>
+                <li>
+                  <a href="#">Exotics</a>
+                </li>
+                <li>
+                  <a href="#">Norwegian Forest</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Mixed Breeds</a>
+                </li>
+                <li>
+                  <a href="#">Persians</a>
+                </li>
+                <li>
+                  <a href="#">Ragdolls</a>
+                </li>
+                <li>
+                  <a href="#">Siamese</a>
+                </li>
+                <li>
+                  <a href="#">Orientals</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="rabbit_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Rabbits for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">British Giants</a>
+                </li>
+                <li>
+                  <a href="#">Mini Lops</a>
+                </li>
+                <li>
+                  <a href="#">Dutch</a>
+                </li>
+                <li>
+                  <a href="#">Dwarf Lops</a>
+                </li>
+                <li>
+                  <a href="#">French Lops</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Continental Giants</a>
+                </li>
+                <li>
+                  <a href="#">Lionheads</a>
+                </li>
+                <li>
+                  <a href="#">Mixed Breeds</a>
+                </li>
+                <li>
+                  <a href="#">Netherland Dwarf</a>
+                </li>
+                <li>
+                  <a href="#">Rex</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-columns my-3">
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="horse_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Horses for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Appaloosa</a>
+                </li>
+                <li>
+                  <a href="#">Connemara</a>
+                </li>
+                <li>
+                  <a href="#">Irish Draught</a>
+                </li>
+                <li>
+                  <a href="#">Irish Sports</a>
+                </li>
+                <li>
+                  <a href="#">Thoroughbred</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Belgian Warmblood</a>
+                </li>
+                <li>
+                  <a href="#">Welsh Section A</a>
+                </li>
+                <li>
+                  <a href="#">Welsh Section B</a>
+                </li>
+                <li>
+                  <a href="#">Welsh Section C</a>
+                </li>
+                <li>
+                  <a href="#">Welsh Section D</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="rodent_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Rodents for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Chinchilla</a>
+                </li>
+                <li>
+                  <a href="#">Degus</a>
+                </li>
+                <li>
+                  <a href="#">Ferret</a>
+                </li>
+                <li>
+                  <a href="#">Gerbil</a>
+                </li>
+                <li>
+                  <a href="#">Guinea Pig</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Pygmy Hedgehog</a>
+                </li>
+                <li>
+                  <a href="#">Mouse</a>
+                </li>
+                <li>
+                  <a href="#">Hamster</a>
+                </li>
+                <li>
+                  <a href="#">Rat</a>
+                </li>
+                <li>
+                  <a href="#">Sugar Glider</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="reptile_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Reptiles for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Bearded Dragon</a>
+                </li>
+                <li>
+                  <a href="#">Chameleon</a>
+                </li>
+                <li>
+                  <a href="#">Gecko</a>
+                </li>
+                <li>
+                  <a href="#">Frog</a>
+                </li>
+                <li>
+                  <a href="#">Iguana</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Lizard</a>
+                </li>
+                <li>
+                  <a href="#">Snake</a>
+                </li>
+                <li>
+                  <a href="#">Terrapin</a>
+                </li>
+                <li>
+                  <a href="#">Tortoise</a>
+                </li>
+                <li>
+                  <a href="#">Turtle</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-columns my-3">
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="bird_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Birds for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Budgerigars</a>
+                </li>
+                <li>
+                  <a href="#">Canaries</a>
+                </li>
+                <li>
+                  <a href="#">Cockatiels</a>
+                </li>
+                <li>
+                  <a href="#">Doves</a>
+                </li>
+                <li>
+                  <a href="#">Finches</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Lories</a>
+                </li>
+                <li>
+                  <a href="#">Lovebirds</a>
+                </li>
+                <li>
+                  <a href="#">Macaws</a>
+                </li>
+                <li>
+                  <a href="#">Parrots</a>
+                </li>
+                <li>
+                  <a href="#">Pigeons</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="fish_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Fish for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Angelfish</a>
+                </li>
+                <li>
+                  <a href="#">Barbs</a>
+                </li>
+                <li>
+                  <a href="#">Bettas</a>
+                </li>
+                <li>
+                  <a href="#">Cichlids</a>
+                </li>
+                <li>
+                  <a href="#">Discus</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Goldfish</a>
+                </li>
+                <li>
+                  <a href="#">Gouramis</a>
+                </li>
+                <li>
+                  <a href="#">Koi Carp</a>
+                </li>
+                <li>
+                  <a href="#">Rainbow Fish</a>
+                </li>
+                <li>
+                  <a href="#">Tetras</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative px-2 py-2">
+          <img
+            src="poultry_icon.png"
+            alt="dog icon"
+            class="bottom-img img-responsive position-absolute px-2 py-2"
+          />
+          <a href="#" class="card-title font-weight-bold text-warning"
+            >Poultry for Sale</a
+          >
+          <div class="row card-body">
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Chickens</a>
+                </li>
+                <li>
+                  <a href="#">Ducks</a>
+                </li>
+                <li>
+                  <a href="#">Geese</a>
+                </li>
+                <li>
+                  <a href="#">Guinea Fowl</a>
+                </li>
+                <li>
+                  <a href="#">Hens</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <ul class="list-unstyled adjust-text">
+                <li>
+                  <a href="#">Pheasants</a>
+                </li>
+                <li>
+                  <a href="#">Quail</a>
+                </li>
+                <li>
+                  <a href="#">Turkeys</a>
+                </li>
+                <li>
+                  <a href="#">Waterfowl</a>
+                </li>
+                <li>
+                  <a href="#">Peafowl</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-2">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item bg-info mx-2 rounded">
+          <a class="nav-link text-white font-weight-bold" href="#"
+            >Dog Breeds</a
+          >
+        </li>
+        <li class="nav-item bg-warning mx-2 rounded">
+          <a class="nav-link text-white font-weight-bold" href="#"
+            >Cat Breeds</a
+          >
+        </li>
+        <li class="nav-item bg-warning mx-2 rounded">
+          <a class="nav-link text-white font-weight-bold" href="#">Locations</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="card px-2 py-2">
+        <a href="#" class="card-title font-weight-bold text-warning"
+          >Most Popular Dog Breeds</a
+        >
+        <div class="row card-body">
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">French Bulldog</a>
+              </li>
+              <li>
+                <a href="#">English Bulldog</a>
+              </li>
+              <li>
+                <a href="#">Border Collie</a>
+              </li>
+              <li>
+                <a href="#" class="long-text">Cavalier King Charles Spaniel</a>
+              </li>
+              <li>
+                <a href="#">Rottweiler</a>
+              </li>
+              <li>
+                <a href="#">Boxer</a>
+              </li>
+              <li>
+                <a href="#">Miniature Schnauzer</a>
+              </li>
+              <li>
+                <a href="#">West Highland Terrier</a>
+              </li>
+              <li>
+                <a href="#">Cane Corso</a>
+              </li>
+              <li>
+                <a href="#">Jackapoo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">Chihuahua</a>
+              </li>
+              <li>
+                <a href="#">German Shepherd</a>
+              </li>
+              <li>
+                <a href="#">Dachshund</a>
+              </li>
+              <li>
+                <a href="#">Siberian Husky</a>
+              </li>
+              <li>
+                <a href="#">Toy Poodle</a>
+              </li>
+              <li>
+                <a href="#">Sprocker</a>
+              </li>
+              <li>
+                <a href="#">Whippet</a>
+              </li>
+              <li>
+                <a href="#">Dobermann</a>
+              </li>
+              <li>
+                <a href="#">Hungarian Vizsla</a>
+              </li>
+              <li>
+                <a href="#">Jug</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">Pug</a>
+              </li>
+              <li>
+                <a href="#">Shih Tzu</a>
+              </li>
+              <li>
+                <a href="#">Miniature Dachshund</a>
+              </li>
+              <li>
+                <a href="#">Beagle</a>
+              </li>
+              <li>
+                <a href="#">Old Tyme Bulldog</a>
+              </li>
+              <li>
+                <a href="#">Lhasa Apso</a>
+              </li>
+              <li>
+                <a href="#">Akita</a>
+              </li>
+              <li>
+                <a href="#">Patterdale Terrier</a>
+              </li>
+              <li>
+                <a href="#">Goldendoodle</a>
+              </li>
+              <li>
+                <a href="#">Dalmatian</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">Cockapoo</a>
+              </li>
+              <li>
+                <a href="#">Staffordshire Bull Terrier</a>
+              </li>
+              <li>
+                <a href="#">Yorkshire Terrier</a>
+              </li>
+              <li>
+                <a href="#">Labradoodle</a>
+              </li>
+              <li>
+                <a href="#">Maltese</a>
+              </li>
+              <li>
+                <a href="#">Shar Pei</a>
+              </li>
+              <li>
+                <a href="#">Boston Terrier</a>
+              </li>
+              <li>
+                <a href="#">Cavachon</a>
+              </li>
+              <li>
+                <a href="#">Poochon</a>
+              </li>
+              <li>
+                <a href="#">Shihpoo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">Cocker Spaniel</a>
+              </li>
+              <li>
+                <a href="#">Jack Russell</a>
+              </li>
+              <li>
+                <a href="#">English Springer Spaniel</a>
+              </li>
+              <li>
+                <a href="#">American Bulldog</a>
+              </li>
+              <li>
+                <a href="#">Bichon Frise</a>
+              </li>
+              <li>
+                <a href="#">Lurcher</a>
+              </li>
+              <li>
+                <a href="#">Poodle</a>
+              </li>
+              <li>
+                <a href="#">Chow Chow</a>
+              </li>
+              <li>
+                <a href="#">Maltipoo</a>
+              </li>
+              <li>
+                <a href="#">Alaskan Malamute</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <ul class="list-unstyled adjust-text">
+              <li>
+                <a href="#">Labrador Retriever</a>
+              </li>
+              <li>
+                <a href="#">Pomeranian</a>
+              </li>
+              <li>
+                <a href="#">Cavapoo</a>
+              </li>
+              <li>
+                <a href="#">Golden Retriever</a>
+              </li>
+              <li>
+                <a href="#">Border Terrier</a>
+              </li>
+              <li>
+                <a href="#">Dogue De Bordeaux</a>
+              </li>
+              <li>
+                <a href="#">Miniature Poodle</a>
+              </li>
+              <li>
+                <a href="#">English Bull Terrier</a>
+              </li>
+              <li>
+                <a href="#">Belgian Shepherd Dog</a>
+              </li>
+              <li>
+                <a href="#">Chorkie</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="text-dark font-weight-bold">View All Dog Breeds</a>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row bg-warning mt-3">
+        <ul class="col-7 navbar-nav navbar-expand mx-auto">
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">About</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Contact</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Advertising</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Write For Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Link to Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Banners</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark pt-3">
+      <div class="row">
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Social Media</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Like us on Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Google Plus</a>
+            </li>
+          </ul>
+          <img src="logo.jpg" alt="site logo" />
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Dogs & Puppies for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">French Bulldogs for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Chihuahuas for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pugs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cocker Spaniels for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Labradors for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Bulldogs for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Cats & Kittens for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Bengals for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">British Shorthairs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Oriental Cates for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Persian Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Ragdoll Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Siamese Cats for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Other Pets for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Birds for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Fish for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Horses for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Poultry for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rabbits for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rodents for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Other Pages</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Cat Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pet Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cat Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Sell Pets for Free</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid adjust-text bg-dark py-4">
+      <div class="row justify-content-center">
+        <div class="col-9 text-white">
+          © Copyright - Zone4Code 2020 <br />
+          Pets4Homes.co.uk use cookies on this site to enhance your user
+          experience. Use of this website and other services constitutes
+          acceptance of the Pets4Homes
+          <a href="#">Terms of Use</a> and
+          <a href="#">Privacy and Cookie Policy </a>. You can
+          <a href="#">manage your cookies</a> at any time.
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

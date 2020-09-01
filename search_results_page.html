@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Pets4Homes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-xl">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" width="60" height="60" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Adoption</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Stud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pets wanted</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Advice</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Dog Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Cat Breeds</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Pet Insurance</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between">
+        <input
+          class="button border-0 text-white mx-2 font-weight-bold rounded"
+          type="submit"
+          value="Register"
+        />
+        <input
+          class="button border-0 text-white mx-2 font-weight-bold rounded"
+          type="submit"
+          value="Login"
+        />
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">
+          <form class="px-4 py-2 bg-white rounded" action="action_page.php">
+            <h3 class="font-weight-bold text-center">
+              Refine Search
+            </h3>
+            <div class="form-group">
+              <label for="pet-type" class="control-label font-weight-bold pb-0"
+                >Pet type</label
+              >
+
+              <select name="pet type" id="pet-type" class="form-control">
+                <option value="">Pet type</option>
+                <option value="birds">Birds</option>
+                <option value="cats">Cats</option>
+                <option value="dogs">Dogs</option>
+                <option value="horses">Horses</option>
+                <option value="invertebrates">Invertebrates</option>
+                <option value="poultry">Poultry</option>
+                <option value="rabbits">Rabbits</option>
+                <option value="reptiles">Reptiles</option>
+                <option value="rodents">Rodents</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pet-breed" class="control-label font-weight-bold pb-0"
+                >Pet Breed</label
+              >
+              <select name="pet breed" id="pet-breed" class="form-control">
+                <option value="">Pet Breed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label
+                for="advert-type"
+                class="control-label font-weight-bold pb-0"
+                >Advert Type</label
+              >
+              <select name="advert-type" id="advert-type" class="form-control">
+                <option value="">For Sale</option>
+                <option value="">For Adoption</option>
+                <option value="">For Stud</option>
+                <option value="">Wanted</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="location" class="control-label font-weight-bold pb-0"
+                >Location</label
+              >
+              <input
+                type="text"
+                id="location"
+                class="form-control"
+                placeholder="Town or Postcode"
+              />
+            </div>
+
+            <div class="form-group">
+              <label
+                for="distanceRange"
+                class="control-label font-weight-bold pb-0"
+                >Distance</label
+              >
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider"
+                id="distanceRange"
+              />
+            </div>
+            <div class="form-group">
+              <div>
+                <label
+                  for="priceRange"
+                  class="control-label font-weight-bold pb-0"
+                  >Price</label
+                >
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="50"
+                  class="slider"
+                  id="priceRange"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="keywords" class="control-label font-weight-bold pb-0"
+                >Keywords</label
+              >
+              <input type="text" id="keywords" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label
+                for="resultsPerPage"
+                class="control-label font-weight-bold pb-0"
+                >Results Per Page</label
+              >
+              <select
+                name="results per page"
+                id="resultsPerPage"
+                class="form-control"
+              >
+                <option value="">10</option>
+                <option value="">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label
+                for="updateSearch"
+                class="control-label font-weight-bold pb-0 invisible"
+                >Update Search</label
+              >
+              <button
+                type="submit"
+                name="update search"
+                class="btn btn-block btn-warning font-weight-bold text-white"
+                id="Updatesearch"
+              >
+                Update Search
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-8">
+          <h1 class="row text-warning font-weight-bold">
+            Pets in Tunisia
+          </h1>
+
+          <p class="row">
+            Pets4Homes found &nbsp;<b>27,163 Pets in Tunisia</b>, which meet
+            your criteria.
+          </p>
+          <div class="row">
+            <form action="action_page.php">
+              <div class="form-group">
+                <label for="sortBy" class="control-label font-weight-bold pb-0"
+                  >Sort By</label
+                >
+
+                <select name="sort by" id="sortBy" class="form-control">
+                  <option value="" class="active">Date Updated (Newest)</option>
+                  <option value="">Date Updated (Oldest)</option>
+                  <option value="">Date Created (Newest)</option>
+                  <option value="">Price (Lowest)</option>
+                  <option value="">Price (Highest)</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="row w-100 mx-0 px-0 mt-4">
+            <div class="col d-flex px-0">
+              <div class="hrdivider px-0">
+                <div
+                  class="text-warning font-weight-bold w-25 ml-5 border border-warning rounded"
+                >
+                  <i class="fa fa-bolt"></i>
+                  Boosted Adverts
+                </div>
+                <hr class="divider w-100 px-0 border-warning" />
+              </div>
+            </div>
+          </div>
+          <div class="container border border-warning mt-4">
+            <div class="row">
+              <div class="col-4 embed-responsive">
+                <img
+                  src="./dog_details.jpeg"
+                  alt="dog"
+                  class="embed-responsive-item"
+                />
+              </div>
+              <div class="col-8">
+                <div class="py-2">
+                  <h5 class="text-warning font-weight-bold">
+                    Kc Reg White Swiss Shepherd Pups For Sale
+                  </h5>
+                  <p class="font-weight-bold">
+                    <i class="fa fa-map-marker"></i> Buxton, Derbyshire
+                  </p>
+                  <p class="mt-3 small">
+                    Ultra rare UK Bred KC Registered White Swiss Shepherd pups
+                    for sale from extensively health tested parents. We have 7
+                    Boys and 2 Females.
+                  </p>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mt-2">
+                      <li class="breadcrumb-item">
+                        Sale
+                      </li>
+
+                      <li class="breadcrumb-item">Dogs</li>
+                      <li class="breadcrumb-item">
+                        White Swiss Shepherd
+                      </li>
+                      <li class="breadcrumb-item">
+                        Buxton
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-3 py-3">
+                <div class="text-warning font-weight-bold price">
+                  Price$
+                </div>
+              </div>
+
+              <div class="col-8 border-top border-left">
+                <div class="row">
+                  <div class="col-2 embed-responsive">
+                    <img
+                      class="img-responsive rounded-circle p-2"
+                      src="user_logo.jpg"
+                      alt="user icon"
+                    />
+                  </div>
+                  <div class="col-8 p-2">
+                    <div class="row">
+                      <a href="#">Seller Name</a>
+                    </div>
+                    <div class="row">
+                      <a href="#">Seller Type</a>
+                    </div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <a href="#"
+                      ><i
+                        class="fa fa-3x fa-heart-o text-warning"
+                        title="Add to favourites"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container border border-warning mt-4">
+            <div class="row">
+              <div class="col-4 embed-responsive">
+                <img
+                  src="./cockapoo.jpg"
+                  alt="dog"
+                  class="embed-responsive-item"
+                />
+              </div>
+              <div class="col-8">
+                <div class="py-2">
+                  <h5 class="text-warning font-weight-bold">
+                    Beautiful F1 Cockapoo Puppies
+                  </h5>
+                  <p class="font-weight-bold">
+                    <i class="fa fa-map-marker"></i> Doncaster, South Yorkshire
+                  </p>
+                  <p class="mt-3 small">
+                    Hi we are so proud of our lovely girl Treacle she has just
+                    given birth to Her first litter of 6 adorable cockapoo
+                    puppies,Treacle is our adorable loving family pet.
+                  </p>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mt-2">
+                      <li class="breadcrumb-item">
+                        Sale
+                      </li>
+
+                      <li class="breadcrumb-item">Dogs</li>
+                      <li class="breadcrumb-item">
+                        Cockapoo
+                      </li>
+                      <li class="breadcrumb-item">
+                        Doncaster
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-3 py-3">
+                <div class="text-warning font-weight-bold price">
+                  Price$
+                </div>
+              </div>
+
+              <div class="col-8 border-top border-left">
+                <div class="row">
+                  <div class="col-2 embed-responsive">
+                    <img
+                      class="img-responsive rounded-circle p-2"
+                      src="user_logo.jpg"
+                      alt="user icon"
+                    />
+                  </div>
+                  <div class="col-8 p-2">
+                    <div class="row">
+                      <a href="#">Seller Name</a>
+                    </div>
+                    <div class="row">
+                      <a href="#">Seller Type</a>
+                    </div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <a href="#"
+                      ><i
+                        class="fa fa-3x fa-heart-o text-warning"
+                        title="Add to favourites"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row w-100 mx-0 px-0 mt-4">
+            <div class="col d-flex px-0">
+              <div class="hrdivider px-0">
+                <div
+                  class="text-secondary font-weight-bold ml-5 w-25 border border-secondary rounded"
+                >
+                  All Adverts
+                </div>
+                <hr class="divider w-100 px-0 border-secondary" />
+              </div>
+            </div>
+          </div>
+          <div class="container shadow-sm mt-4">
+            <div class="row">
+              <div class="col-4 embed-responsive">
+                <img
+                  src="./dog_details.jpeg"
+                  alt="dog"
+                  class="embed-responsive-item"
+                />
+              </div>
+              <div class="col-8">
+                <div class="py-2">
+                  <h5 class="text-warning font-weight-bold">
+                    Kc Reg White Swiss Shepherd Pups For Sale
+                  </h5>
+                  <p class="font-weight-bold">
+                    <i class="fa fa-map-marker"></i> Buxton, Derbyshire
+                  </p>
+                  <p class="mt-3 small">
+                    Ultra rare UK Bred KC Registered White Swiss Shepherd pups
+                    for sale from extensively health tested parents. We have 7
+                    Boys and 2 Females.
+                  </p>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mt-2">
+                      <li class="breadcrumb-item">
+                        Sale
+                      </li>
+
+                      <li class="breadcrumb-item">Dogs</li>
+                      <li class="breadcrumb-item">
+                        White Swiss Shepherd
+                      </li>
+                      <li class="breadcrumb-item">
+                        Buxton
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-3 py-3">
+                <div class="font-weight-bold price">
+                  Price$
+                </div>
+              </div>
+
+              <div class="col-8 border-top border-left">
+                <div class="row">
+                  <div class="col-2 embed-responsive">
+                    <img
+                      class="img-responsive rounded-circle p-2"
+                      src="user_logo.jpg"
+                      alt="user icon"
+                    />
+                  </div>
+                  <div class="col-8 p-2">
+                    <div class="row">
+                      <a href="#">Seller Name</a>
+                    </div>
+                    <div class="row">
+                      <a href="#">Seller Type</a>
+                    </div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <a href="#"
+                      ><i
+                        class="fa fa-3x fa-heart-o text-secondary"
+                        title="Add to favourites"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container shadow-sm mt-4">
+            <div class="row">
+              <div class="col-4 embed-responsive">
+                <img
+                  src="./dog_details.jpeg"
+                  alt="dog"
+                  class="embed-responsive-item"
+                />
+              </div>
+              <div class="col-8">
+                <div class="py-2">
+                  <h5 class="text-warning font-weight-bold">
+                    Kc Reg White Swiss Shepherd Pups For Sale
+                  </h5>
+                  <p class="font-weight-bold">
+                    <i class="fa fa-map-marker"></i> Buxton, Derbyshire
+                  </p>
+                  <p class="mt-3 small">
+                    Ultra rare UK Bred KC Registered White Swiss Shepherd pups
+                    for sale from extensively health tested parents. We have 7
+                    Boys and 2 Females.
+                  </p>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mt-2">
+                      <li class="breadcrumb-item">
+                        Sale
+                      </li>
+
+                      <li class="breadcrumb-item">Dogs</li>
+                      <li class="breadcrumb-item">
+                        White Swiss Shepherd
+                      </li>
+                      <li class="breadcrumb-item">
+                        Buxton
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-3 py-3">
+                <div class="font-weight-bold price">
+                  Price$
+                </div>
+              </div>
+
+              <div class="col-8 border-top border-left">
+                <div class="row">
+                  <div class="col-2 embed-responsive">
+                    <img
+                      class="img-responsive rounded-circle p-2"
+                      src="user_logo.jpg"
+                      alt="user icon"
+                    />
+                  </div>
+                  <div class="col-8 p-2">
+                    <div class="row">
+                      <a href="#">Seller Name</a>
+                    </div>
+                    <div class="row">
+                      <a href="#">Seller Type</a>
+                    </div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <a href="#"
+                      ><i
+                        class="fa fa-3x fa-heart-o text-secondary"
+                        title="Add to favourites"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row bg-warning mt-3">
+        <ul class="col-7 navbar-nav navbar-expand mx-auto">
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">About</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Contact</a>
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Advertising</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Write For Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold"
+              >Link to Us</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-md-2 mx-3">
+            <a href="#" class="nav-link text-white font-weight-bold">Banners</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark pt-3">
+      <div class="row">
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Social Media</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Like us on Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Follow us on Google Plus</a>
+            </li>
+          </ul>
+          <img src="logo.jpg" alt="site logo" />
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Dogs & Puppies for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">French Bulldogs for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Chihuahuas for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pugs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cocker Spaniels for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Labradors for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Bulldogs for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Cats & Kittens for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Bengals for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">British Shorthairs for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Oriental Cates for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Persian Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Ragdoll Cats for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Siamese Cats for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white"
+            >Other Pets for Sale</a
+          >
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Birds for sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Fish for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Horses for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Poultry for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rabbits for Sale</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Rodents for Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card px-2 py-2 mx-auto bg-dark border-0">
+          <a href="#" class="font-weight-bold text-white">Other Pages</a>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <a href="#" class="text-secondary">Cat Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Breeds</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Pet Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Dog Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Cat Adoption</a>
+            </li>
+            <li>
+              <a href="#" class="text-secondary">Sell Pets for Free</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid adjust-text bg-dark py-4">
+      <div class="row justify-content-center">
+        <div class="col-9 text-white">
+          © Copyright - Zone4Code 2020 <br />
+          Pets4Homes.co.uk use cookies on this site to enhance your user
+          experience. Use of this website and other services constitutes
+          acceptance of the Pets4Homes
+          <a href="#">Terms of Use</a> and
+          <a href="#">Privacy and Cookie Policy </a>. You can
+          <a href="#">manage your cookies</a> at any time.
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
